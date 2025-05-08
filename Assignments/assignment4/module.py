@@ -426,25 +426,28 @@ def capitalize_first_last():
   '''
 
 
-def sum_numbers_in_string():
+def sum_digits_in_string():
   return '''
-  **sum of the numbers in strings**
+  **sum of the digits in strings**
 
   import re
   s = input("Enter a string with numbers: ")
-  numbers = re.findall(r'\d+', s)
-  total = sum(map(int, numbers))
-  print(f"Sum of numbers: {total}")
+  t=0
+  for i in s:
+    if i.isdigit():
+        t+=int(i)
+
+  print(f"Sum of numbers: {t}")
   ==========================================
   Testcase-1:
   Enter a string with numbers: abc123def45gh6
   output:
-  Sum of numbers: 174
+  Sum of numbers: 21
   ------------------------------------------
   Testcase-2:
   Enter a string with numbers: 10a20b30
   output:
-  Sum of numbers: 60
+  Sum of numbers: 6
   ===========================================
   '''
 

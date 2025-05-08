@@ -17,7 +17,7 @@ def display_menu():
     print("13.change_case")
     print("14.sort_characters")
     print("15.capitalize_first_last")
-    print("16.sum_numbers_in_string")
+    print("16.sum_digits_in_string")
     print("17.replace_zeros_with_ones")
     print("18.sum_of_primes")
     print("19.sum_of_odds")
